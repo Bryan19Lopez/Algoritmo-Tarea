@@ -1,0 +1,435 @@
+class ejericio1{
+    //1. Sumar dos numeros siempre cuando el primero sea mayor al segundo
+    sumadedosnum(){
+        console.log("1. Sumar dos numeros siempre cuando el primero sea mayor al segundo")
+        let num1=5
+        let num2=2
+        let suma=0
+        let ops="+"
+        if(num1>num2){
+            suma= num1+num2
+            console.log("la suma de",num1, ops, num2, "=", suma)
+        }
+        else{
+            console.log("El Primer Numero Debe Ser Mayor")
+        }
+
+    }
+}
+let numeros= new ejericio1()
+numeros.sumadedosnum()
+
+//2. Realizar una operacion segun el operador (+,-,*,/,%) realizar la suma, resta, multiplicacion, division y residuo
+class ejercicio2{
+    operacionseguneloperador(){
+        console.log("2. Realizar una operacion segun el operador (+,-,*,/,%) realizar la suma, resta, multiplicacion, division y residuo")
+        let num1=10
+        let num2=2
+        let sum=0,rest=0,mul=0,div=0,resi=0
+        sum=num1+num2
+        rest=num1-num2
+        mul=num1*num2
+        div=num1/num2
+        resi=num1 % num2
+        console.log(num1,"+",num2,"=",sum)
+        console.log(num1,"-",num2,"=",rest)
+        console.log(num1,"*",num2,"=",mul)
+        console.log(num1,"/",num2,"=",div)
+        console.log(num1,"%",num2,"=",resi) 
+    }
+}
+let operador= new ejercicio2()
+operador.operacionseguneloperador()
+
+//3. Presentar el mayor de dos numeros
+class ejercicio3{
+    mayordedosnumeros(){
+        console.log("3. Presentar el mayor de dos numeros")
+        let num1=12
+        let num2=7
+    if(num1>num2){
+        console.log(num1,"es mayor")
+    }
+    else{
+        console.log(num2,"es mayor")
+    }
+    }
+}
+let tarea= new ejercicio3()
+tarea.mayordedosnumeros()
+
+//4. Dado un nombre presentarlo
+class ejercicio4{
+    presentarnombre(){
+        console.log("4. Dado un nombre presentarlo")
+        let nom1="Jose"
+        console.log(nom1)
+    }
+}
+let ejercicios= new ejercicio4()
+ejercicios.presentarnombre()
+
+//5. Dado un valor de compra presentar el total considerando un 12% de iva
+class ejercicio5{
+    presentareltotal(){
+        console.log("5. Dado un valor de compra presentar el total considerando un 12% de iva")
+        let precio=300
+        let total=0
+        let iva=0.12
+        iva=precio*iva
+        total=precio+iva
+        console.log("total de compra es", total)
+    }
+}
+let total= new ejercicio5()
+total.presentareltotal()
+
+//6. Presentar 5 veces un nombre
+class ejercicio6{
+    presentar5veces(){
+        console.log("6. Presentar 5 veces un nombre")
+        let nombre="Luciano"
+        let contador=1
+        console.log("nombre:Luciano")
+        for(contador=1; contador <=5; contador++){
+            console.log(`${contador} ${nombre}`)
+        }
+    }
+}
+let nombre= new ejercicio6()
+nombre.presentar5veces()
+
+//7. Presentar los numeros multiplos de 3 del 3 al 21
+class ejercicio7{
+    multiplosde3(){
+        console.log("7. Presentar los numeros multiplos de 3 del 3 al 21")
+        let num=1
+        while (num<=21){
+            if (num%3==0){
+                console.log(num)
+            }
+            num= num+1
+        }
+    }
+}
+let presentarnumeros= new ejercicio7()
+presentarnumeros.multiplosde3()
+
+//8. Presentar los numeros multiplos de 3 del 21 al 3
+class ejercicio8{
+    Presentarmultiplosde3(){
+        console.log("8. Presentar los  numeros multiplos de 3 del 21 al 3")
+        let num=21
+        while (num>=3){
+            if (num%3==0){
+                console.log(num)
+            }
+            num=num-1
+        }
+    }
+}
+let multiplos= new ejercicio8()
+multiplos.Presentarmultiplosde3()
+
+//9. Dados dos nombres indicar si son iguales o diferentes
+class ejercicio9{
+    dosnombres(){
+        console.log("9. Dados dos nombres indicar si son iguales o diferentes")
+        let nombre1="julio"
+        let nombre2="julio"
+        if(nombre1=nombre2){
+            console.log(nombre1,nombre2, "si son nombres iguales")
+        }
+        else{
+            console.log(nombre1,nombre2, "no son nombres iguales")
+        }
+    }
+}
+let nombresiguales= new ejercicio9()
+nombresiguales.dosnombres()
+
+//10. Dado diez numeros en un arreglo presentar los que tengan menos de 5 caracteres
+class ejercicio10{
+    presentararreglo(){
+        console.log("10. Dado diez numeros en un arreglo presentar los que tengan menos de 5 caracteres")
+        let arreglo=["343243","654556","12","10","7","9","877998","477343","8","245542"]
+        console.log("el arreglo es:",arreglo)
+        for(let pos=0;pos<10;pos=pos+1){
+            if(arreglo[pos].length<5){
+                console.log(`pos->${pos}elemento:${arreglo[pos]}`)
+            }
+        } 
+    }
+}
+let caracteres= new ejercicio10()
+caracteres.presentararreglo()
+
+//11. Dado un arreglo presentar sus elementos
+class ejercicio11{
+    Presentarelementos(){
+        console.log("11. Dado un arreglo presentar sus elementos")
+        let arreglo=[6,5,4,3,2]
+        console.log(arreglo)
+    }
+}
+let elemento= new ejercicio11()
+elemento.Presentarelementos()
+
+//12. Dado un arreglo de numeros presentar los menores a 10
+class ejercicio12{
+    Presentarmenoresa10(){
+        console.log("12. Dado un arreglo de numeros presentar los menores a 10")
+        let num=[2,14,5,20,7]
+        let long= num.length,c=0
+        console.log("el areglo es:",num)
+        while (c<long){
+            if (num[c]<10){
+                console.log(num[c],"es menor que 10")
+            }
+            c= c+1
+        } 
+    }
+}
+let menor= new ejercicio12()
+menor.Presentarmenoresa10()
+
+//13. Dado un arreglo de numeros presentar los impares y al final la suma de los pares
+class ejercicio13{
+    Presentarimparysumadepar(){
+        console.log("13. Dado un arreglo de numeros presentar los impares y al final la suma de los pares")
+        let num=[9,16,27,8,35]
+        let lon= num.length,c=0,suma=0
+        console.log("el arreglo es:",num)
+        while(c<lon){
+            if(num[c] %2==0){
+                suma= suma+num[c]
+                console.log("La suma de los Pares es:",suma)
+            }
+            else{
+                console.log(num[c],"es numero impar")
+            }
+            c= c+1
+        }
+    }
+}
+let imparypar= new ejercicio13()
+imparypar.Presentarimparysumadepar()
+
+//14. Presentar el primero el medio y el ultimo valor de un arreglo
+class ejercicio14{
+    presentarvalordeunarreglo(){
+        console.log("14. Presentar el primero el medio y el ultimo valor de un arreglo")
+        let num=[4,15,8,30,12]
+        let central= num[(num.length-1)/2]
+        let ultimo= num[num.length-1]
+        console.log("el arreglo es:",num)
+        console.log("El primer numero del arreglo es:",num[0])
+        console.log("El numero medio del arreglo es:",central)
+        console.log("El ultimo numero del arreglo es:",ultimo)
+    }
+}
+let valor= new ejercicio14()
+valor.presentarvalordeunarreglo()
+
+//15. Calcular el vuelto de una compra dado el costo y el pago
+class ejercicio15{
+    calcularelvuelto(){
+        console.log("15. Calcular el vuelto de una compra dado el coasto y el pago")
+        let costo=50
+        let pago=100
+        let vuelto=100-50
+        console.log("El costo es:",costo)
+        console.log("El pago es:",pago)
+        console.log("El vuelto es:",vuelto)
+    }
+}
+let costoypago= new ejercicio15()
+costoypago.calcularelvuelto()
+
+//16. Presentar la tabla de multiplicar de cualquier numero del 1 al 12
+class ejercicio16{
+    tablademultiplicar(){
+        console.log("16. Presentar la tabla de multiplicar de cualquier numero del 1 al 12")
+        console.log("La tabla del 2")
+        let n=2
+        let n1=1,mul=1
+        while(n1<=12){
+            mul= n*n1
+            console.log(n,"*",n1,"=",mul)
+            n1= n1+1 
+        }
+    }
+}
+let tabla= new ejercicio16()
+tabla.tablademultiplicar()
+
+//17. Realizar la multiplicacion de dos numeros por medio de sumas sucesivas
+class ejercicio17{
+    multiplicaciondedosnum(){
+        console.log("17. Realizar la mutiplicacion de dos numeros por medio de sumas sucesivas")
+        let n1=5
+        let n2=3
+        let suma=0
+        for(let i=0;i<n2;i=i+1){
+            suma= n1+suma
+            console.log(suma-n1,"+",n1,"=",suma)
+        }
+        console.log("la mutiplicacion de",n1,"*",n2,"es =",suma)
+    }
+}
+let sumasucesivas= new ejercicio17()
+sumasucesivas.multiplicaciondedosnum()
+
+//18. Realizar la division de dos numeros por medio de restas sucesivas
+class ejercicio18{
+    divisiondedosnum(){
+        console.log("18. Realizar la division de dos numeros por medio de restas sucesivas")
+        let n1=10
+        let n2=2
+        let c=0
+        let res=n1
+        while(res-n2>=0){
+            res= res-n2
+            console.log(res+n2,"-",n2,"=",res)
+            c= c+1
+        }
+        console.log("La division etre:",n1,"/",n2,"=",c)
+    }
+}
+let restasucesivas= new ejercicio18()
+restasucesivas.divisiondedosnum()
+
+//19. Calcular el factorial de un numero
+class ejercicio19{
+    factorialdeunnum(){
+        console.log("19. Calcular el factorial de un numero")
+        let n=4
+        let c=1,fac=1
+        while(c<=n){
+            fac= fac*c
+            c= c+1
+        }
+        console.log("El factorial del numero 4 es:",fac)
+    }
+}
+let calcularnum= new ejercicio19()
+calcularnum.factorialdeunnum()
+
+//20. Calcular el exponente de un numero
+class ejercicio20{
+    calcularexponente(){
+        console.log("20. Calcular el exponente de un numero")
+        let num=3
+        let exp=3
+        let pos=1
+        let c=0
+        let elevado= Math.pow(num,exp);
+        console.log("3","↑",exp,"=",elevado)
+    }
+}
+let expdenum= new ejercicio20()
+expdenum.calcularexponente()
+
+//21. Calcular la serie de fibonacci dado un numero
+class ejercicio21{
+    calcularseriedefibonacci(){
+        console.log("21. Calcular la serie de fibonacci dado un numero")
+        let a=0
+        let b=1
+        let c=1
+        let cont=3
+        let num=8
+        while(cont<num){
+            a=b;b=c;c=a+b
+            console.log(c)
+            cont=cont+1
+        }
+    }
+} 
+let fibonacci= new ejercicio21()
+fibonacci.calcularseriedefibonacci()
+
+//22. Dado un numero invertirlo
+class ejercicio22{
+    numeroinvert(){
+        console.log("22. Dado un numero invertirlo")
+        let num=321
+        let ninvertido=0,d=0
+        console.log(num)
+        while(num !=0){
+            d= num%10
+            ninvertido= ninvertido*10+d
+            num= Math.trunc(num/10)
+        }
+        console.log(ninvertido)
+    }
+}
+let invertido= new ejercicio22()
+invertido.numeroinvert()
+
+//23. Presentar los divisores de un numero
+class ejercicio23{
+    presentarlosdiv(){
+        console.log("23. Presentar los divisores de un numero")
+        let num=8
+        let c=1
+        for(c=1;c<=num;c++){
+            if(num%c==0){
+                console.log("Los divisores son:",c)
+            }
+        }
+    }
+}
+let numdediv= new ejercicio23()
+numdediv.presentarlosdiv()
+
+//24. Presentar si un numero es perfecto o no
+class ejercicio24{
+    numeroperfecto(){
+        console.log("24. Presentar si un numero es perfecto o no")
+        let divisores=0
+        let num=6,i=0,sumaperf=0
+        for(i=1;i<num;i=i+1){
+            if(num%i==0){
+                console.log(i)
+                sumaperf= sumaperf+i
+            }
+        }
+        console.log("")
+        if(sumaperf==num){
+            console.log(num,"Es perfecto")
+        }
+        else{
+            console.log(num,"No es perfecto")
+        }
+    }
+}
+let presentarperf= new ejercicio24()
+presentarperf.numeroperfecto()
+
+//25. Verificar si un numero es primo o no
+class ejercicio25{
+    verificarprimo(){
+        console.log("25. Verificar si un numero es primo o no")
+        let num=11
+        let cont=0,i=1
+        for(i=1;i<num;i++)
+        {
+        if(num%i==0)
+        {
+            cont= cont+1
+        }
+        }
+        if(cont=2)
+        {
+            console.log(num,"Si es primo")
+        }
+        else
+        {
+            console.log(num,"No es primo")
+        }
+    }
+}
+let numprimo= new ejercicio25()
+numprimo.verificarprimo()
+
